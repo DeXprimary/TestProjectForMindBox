@@ -1,0 +1,4 @@
+SELECT C.CategoryName, P.ProductName
+FROM Categoryes AS C
+JOIN MergesProductsCategoryes AS CP ON C.CategoryId = CP.CategoryId
+RIGHT JOIN Products AS P ON P.ProductId = CP.ProductId
